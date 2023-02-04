@@ -6,7 +6,18 @@ describe('example to-do app', () => {
   })
 
   it('displays two todo items by default', () => {
-    cy.get('#spinner-container+#contents #spinner-container+#contents',{timeout:30000}).should('be.visible')
+    cy.get('#spinner-container+#contents #spinner-container+#contents').should('be.visible');
+    cy.scrollTo('bottom')
+    cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 400)
+    cy.scrollTo('bottom')
+    cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 700)
+    cy.scrollTo('bottom')
+    cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 1000)
+    cy.scrollTo('bottom')
+    cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 1300)
+    cy.scrollTo('bottom')
+    cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 1600)
+    cy.scrollTo('bottom')
   })
 
 })
