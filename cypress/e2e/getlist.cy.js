@@ -10,6 +10,7 @@ describe('example to-do app', () => {
     cy.scrollTo('bottom')
     cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 400)
     cy.scrollTo('bottom')
+    /*
     cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 700)
     cy.scrollTo('bottom')
     cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 1000)
@@ -18,6 +19,11 @@ describe('example to-do app', () => {
     cy.scrollTo('bottom')
     cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 1600)
     cy.scrollTo('bottom')
+    */
+    cy.get('h3 #video-title').each(($el) => {
+        cy.writeFile('links.txt', 'Hello World', { flag: 'a+' })
+      }
+    )
   })
 
 })
