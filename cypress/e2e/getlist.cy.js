@@ -21,7 +21,12 @@ describe('example to-do app', () => {
     cy.scrollTo('bottom')
     */
     cy.get('h3 #video-title').each(($el) => {
-        cy.writeFile('links.txt', 'Hello World', { flag: 'a+' })
+      cy.get($el)
+      .invoke('attr', 'href')
+      .then(href => {
+        cy.writeFile('links.txt', '\'' + href + '\',\n', { flag: 'a+' })
+      });
+        
       }
     )
   })
