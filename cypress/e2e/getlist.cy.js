@@ -8,7 +8,7 @@ describe('get list videos', () => {
   it('displays two todo items by default', () => {
     cy.get('#spinner-container+#contents #spinner-container+#contents').should('be.visible');
     cy.scrollTo('bottom')
-    /*
+
     cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 400)
     cy.scrollTo('bottom')
     cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 700)
@@ -19,7 +19,7 @@ describe('get list videos', () => {
     cy.scrollTo('bottom')
     cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 1600)
     cy.scrollTo('bottom')
-    */
+
     cy.get('h3 #video-title').each(($el) => {
       cy.get($el)
       .invoke('attr', 'href')
