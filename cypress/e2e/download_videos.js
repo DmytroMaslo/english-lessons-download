@@ -7,7 +7,9 @@ describe('download videos', () => {
     })
   
     it('download videos one by one', () => {
+        let countElements = links.length;
         cy.get('div.tarea-wrap input').type()
+        cy.get('div.def-btn-box a',{timeout:30000}).should('be.visible')
 
     })
 })
