@@ -24,7 +24,7 @@ describe('get list videos', () => {
       cy.get($el)
       .invoke('attr', 'href')
       .then(href => {
-        cy.writeFile('links.txt', '\'' + href + '\',\n', { flag: 'a+' })
+        cy.writeFile('links2.js', '\'' + href + '\',\n', { flag: 'a+' })
       });
         
       }

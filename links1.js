@@ -1,3 +1,4 @@
+var links = [
 '/watch?v=Hp9wUEDasY4&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=1',
 '/watch?v=jMCOyUgKhqU&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=2',
 '/watch?v=nXI9CN5a6ew&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=3',
@@ -615,5 +616,5 @@
 '/watch?v=sABn1YHelKw&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=597',
 '/watch?v=2o_zog6GIXw&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=598',
 '/watch?v=PRiE6DXD7lI&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=599',
-'/watch?v=Q9G4lX4u1Zo&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=600',
+'/watch?v=Q9G4lX4u1Zo&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=600']
 
