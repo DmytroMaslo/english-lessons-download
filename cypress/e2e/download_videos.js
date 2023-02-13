@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import links from '../../links1'
+var link = 'https://www.youtube.com/watch?v=uXVPaRKvc88&list=PLD6SPjEPomaustGSgYNsn3V62BTQeH85X&index=' 
 describe('download videos', () => {
     beforeEach(() => {
       cy.visit('https://en.savefrom.net/383/')

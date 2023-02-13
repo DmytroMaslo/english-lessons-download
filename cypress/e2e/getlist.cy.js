@@ -19,8 +19,9 @@ describe('get list videos', () => {
     cy.scrollTo('bottom')
     cy.get('#spinner-container+#contents #spinner-container+#contents').find('a').should('have.length.above', 1600)
     cy.scrollTo('bottom')
-
-    cy.get('h3 #video-title').each(($el) => {
+    
+    cy.get('h3 #video-title').each(($el,index) => {
+      
       cy.get($el)
       .invoke('attr', 'href')
       .then(href => {
