@@ -14,8 +14,6 @@ describe('download videos', () => {
             cy.get('div.def-btn-box a').click()
             cy.get('div.tarea-wrap input').clear()
         }
-        
-
     })
 })
   
